@@ -1,0 +1,42 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "Starter webpack typescript et jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacodemaniak/ts-webpack-jquery.git"
+  },
+  "keywords": [
+    "webpack",
+    "typescript",
+    "jquery"
+  ],
+  "author": "IDea Factory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacodemaniak/ts-webpack-jquery/issues"
+  },
+  "homepage": "https://github.com/dacodemaniak/ts-webpack-jquery#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.2",
+    "css-loader": "^2.0.0",
+    "exports-loader": "^0.7.0",
+    "node-sass": "^4.11.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^5.3.1",
+    "tsd": "^0.6.5",
+    "typescript": "^3.2.2",
+    "webpack": "^4.27.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  }
+}
