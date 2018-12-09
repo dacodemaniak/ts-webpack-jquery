@@ -4,7 +4,9 @@
   "description": "Starter webpack typescript et jquery",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server",
+    "build:prod": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -31,8 +33,11 @@
     "style-loader": "^0.23.1",
     "ts-loader": "^5.3.1",
     "tsd": "^0.6.5",
+    "tslint": "^5.11.0",
+    "tslint-loader": "^3.5.4",
     "typescript": "^3.2.2",
-    "webpack": "^4.27.1"
+    "webpack": "^4.27.1",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",
