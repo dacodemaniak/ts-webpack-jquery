@@ -1,6 +1,8 @@
 var path = require('path');
 var webpack = require('webpack');
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
 
     entry: './src/app.ts',
@@ -33,6 +35,9 @@ module.exports = {
                 test: /\.(sass|scss)$/,
                 use: [
                     {
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    {
                         loader: "style-loader" // creates style nodes from JS strings
                       },
                       {
@@ -54,5 +59,11 @@ module.exports = {
     resolve: {
         extensions: [".tsx", ".ts", ".js"]
     },
-    mode: 'development'
+    mode: 'development',
+    plugins: [
+        new MiniCssExtractPlugin({
+            filename: "[name].css",
+            chunkFilname: "[id].css"
+        })
+    ]
 };
