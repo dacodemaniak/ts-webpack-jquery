@@ -19,7 +19,7 @@
         "import-spacing": true,
         "indent": [
             true,
-            "tabs"
+            "spaces"
         ],
         "interface-over-type-literal": true,
         "label-position": true,
@@ -87,7 +87,6 @@
         "typedef": [
             true,
             "call-signature",
-            "arrow-call-signature",
             "parameter",
             "arrow-parameter",
             "property-declaration",
