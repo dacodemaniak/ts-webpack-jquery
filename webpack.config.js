@@ -30,6 +30,21 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
+                test: /\.(sass|scss)$/,
+                use: [
+                    {
+                        loader: "style-loader" // creates style nodes from JS strings
+                      },
+                      {
+                        loader: "css-loader" // translates CSS into CommonJS
+                      },
+                      {
+                        loader: "sass-loader" // compiles Sass to CSS
+                      }
+                ],
+                exclude: /node_modules/
+            },
+            {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
                 exclude: /node_modules/
